@@ -1,2 +1,0 @@
-<?xml version="1.0"?>
-<pearconfig version="1.0"><php_dir>/vagrant/public/php</php_dir><ext_dir>/usr/lib/php5/20121212</ext_dir><cfg_dir>/vagrant/public/cfg</cfg_dir><doc_dir>/vagrant/public/docs</doc_dir><bin_dir>/usr/bin</bin_dir><data_dir>/vagrant/public/data</data_dir><www_dir>/vagrant/public/www</www_dir><test_dir>/vagrant/public/tests</test_dir><src_dir>/vagrant/public/src</src_dir><php_bin>/usr/bin/php</php_bin><php_ini>/etc/php5/cli/php.ini</php_ini><php_prefix></php_prefix><php_suffix></php_suffix></pearconfig>
