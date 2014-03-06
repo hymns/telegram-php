@@ -13,11 +13,35 @@ class TelegramApi implements Configurable {
         $this->config = array_merge($this->getDefaults(), $options);
     }
 
-    public function invoke($method, array $params = [], Closure $callback = null)
+    public function invoke(Method $method, Closure $callback = null)
     {
         if(!is_null($callback)) {
             $callback();
         }
+    }
+
+    /**
+     * Retrieve API ID
+     */
+    public function getId()
+    {
+
+    }
+
+    /**
+     * Retrieve API Hash
+     */
+    public function getHash()
+    {
+
+    }
+
+    /**
+     * Get client language
+     */
+    public function getClientLanguage()
+    {
+
     }
 
 }

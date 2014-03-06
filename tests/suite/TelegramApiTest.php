@@ -15,8 +15,7 @@ class TelegramApiTest extends PHPUnit_Framework_TestCase {
     {
         $called = false;
         $this->instance->invoke(
-            'messages.sendMessage',
-            [],
+            new Evdb\TelegramPhp\Method('test.method'),
             function() use (&$called) {
                 $called = true;
             }

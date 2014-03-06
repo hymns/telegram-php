@@ -9,22 +9,24 @@ class MessageSender {
      */
     protected $api;
 
-    public function __construct(TelegramApi $api)
+    public function __construct(TelegramApi $api, Factory $methodFactory)
     {
         $this->api = $api;
+        $this->methodFactory = $methodFactory;
     }
 
     public function sendMessage($peerId, $text, Closure $callback = null)
     {
-        $this->api->invoke(
+        $method = $this->methodFactory->build(
             'messages.sendMessage',
             [
                 'peer' => $this->resolvePeerById($peerId),
                 'text' => $text,
                 'random_id' => $this->generateRandomId()
-            ],
-            $callback
+            ]
         );
+
+        $this->api->invoke($method, $callback);
     }
 
 } 

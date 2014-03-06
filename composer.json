@@ -1,7 +1,14 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/eelkevdbos/diffiehellman"
+        }
+    ],
     "require": {
         "php": ">=5.4",
-        "guzzle/guzzle": "3.7"
+        "guzzle/guzzle": "3.7",
+        "eelkevdbos/diffiehellman": "dev-master"
     },
     "autoload": {
         "psr-4": {
